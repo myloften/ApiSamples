@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <!-- This resource is true if running under at least L-Release
+         API level.  The default value is false; an alternative value
+         for L-Release is true. -->
+    <bool name="atLeastLRelease">true</bool>
+</resources>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- True if running under JellyBean MR1 or later. -->
+    <bool name="atLeastJellyBeanMR1">true</bool>
+</resources>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+duration：动画持续时间
+fromXDelta,fromYDelta   起始时X，Y座标
+toXDelta， toYDelta     动画结束时X,Y的座标
+常见的有加速减速插入器: accelerate_decelerate_interpolator
+加速插入器: accelerate_interpolator
+减速插入器: decelerate_interpolator-->
+<translate xmlns:android="http://schemas.android.com/apk/res/android"
+           android:duration="@android:integer/config_longAnimTime"
+           android:fromXDelta="0"
+           android:interpolator="@android:anim/accelerate_interpolator"
+           android:toXDelta="0"/>

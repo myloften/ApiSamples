@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+zAdjustment 允许在动画播放期间，调整播放内容在Z轴方向的顺序
+  normal:正在播放的动画内容保持当前的Z轴顺序
+  top:在动画播放期间，强制把当前播放的内容放到其他内容的上面
+  bottom:在动画播放期间，强制把当前播放的内容放到其他内容的下面-->
+
+<set xmlns:android="http://schemas.android.com/apk/res/android"
+     android:interpolator="@android:anim/decelerate_interpolator"
+     android:zAdjustment="top">
+    <scale
+        android:duration="@android:integer/config_mediumAnimTime"
+        android:fromXScale="1.0"
+        android:fromYScale="1.0"
+        android:pivotX="50%"
+        android:pivotY="50%"
+        android:toXScale=".5"
+        android:toYScale=".5"/>
+    <alpha
+        android:duration="@android:integer/config_mediumAnimTime"
+        android:fromAlpha="1.0"
+        android:toAlpha="0"/>
+</set>

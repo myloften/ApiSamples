@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<preference-headers xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <header
+        android:fragment="com.loften.android.api.app.DeviceAdminSample$GeneralFragment"
+        android:title="@string/header_general" />
+
+    <header
+        android:fragment="com.loften.android.api.app.DeviceAdminSample$QualityFragment"
+        android:title="@string/header_quality" />
+
+    <header
+        android:fragment="com.loften.android.api.app.DeviceAdminSample$ExpirationFragment"
+        android:title="@string/header_expiration" />
+
+    <header
+        android:fragment="com.loften.android.api.app.DeviceAdminSample$LockWipeFragment"
+        android:title="@string/header_lock_wipe" />
+
+    <header
+        android:fragment="com.loften.android.api.app.DeviceAdminSample$EncryptionFragment"
+        android:title="@string/header_encryption" />
+</preference-headers>

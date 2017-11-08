@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+    fromAlpha:开始时透明度
+    toAlpha： 结束时透明度
+    duration：动画持续时间
+    interpolator: 指定动画插入器
+    常见的有加速减速插入器: accelerate_decelerate_interpolator
+    加速插入器: accelerate_interpolator
+    减速插入器: decelerate_interpolator   -->
+<alpha xmlns:android="http://schemas.android.com/apk/res/android"
+       android:duration="@android:integer/config_longAnimTime"
+       android:fromAlpha="0.0"
+       android:interpolator="@android:anim/accelerate_interpolator"
+       android:toAlpha="1.0"/>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- This resource is true if running under at least KitKat
+         API level.  The default value is false; an alternative value
+         for KitKat is true. -->
+    <bool name="atLeastKitKat">true</bool>
+</resources>

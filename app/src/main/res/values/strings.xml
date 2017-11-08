@@ -1,0 +1,334 @@
+<resources>
+    <string name="app_name">ApiSamples</string>
+
+    <string name="hello_world"><b>Hello, <i>World!</i></b></string>
+
+    <string name="action_bar_usage">App/Tool Bar/ToolBar的简单使用</string>
+    <string name="action_bar_transparent">App/Tool Bar/透明导航栏和状态栏</string>
+
+    <string name="action_bar_search">搜索</string>
+    <string name="action_bar_add">添加</string>
+    <string name="action_bar_edit">编辑</string>
+    <string name="action_bar_share">分享</string>
+    <string name="action_bar_sort">排序</string>
+    <string name="action_bar_sort_alpha">按字母排序</string>
+    <string name="action_bar_sort_size">按大小排序</string>
+    <string name="action_bar_img_translucent">全局图片</string>
+
+    <string name="activity_animation">App/Activity/Activity跳转动画</string>
+    <string name="activity_animation_fade">淡入</string>
+    <string name="activity_animation_zoom">缩小</string>
+    <string name="activity_modern_animation_fade">JELLY_BEAN（4.1）以上淡入</string>
+    <string name="activity_modern_animation_zoom">JELLY_BEAN（4.1）以上缩小</string>
+    <string name="activity_scale_up_animation">按比例放大</string>
+    <string name="activity_zoom_thumbnail_animation">缩略图放大</string>
+    <string name="activity_no_animation">无动画</string>
+
+    <string name="activity_custom_dialog">App/Activity/Custom Dialog</string>
+    <string name="activity_dialog_text">这里使用自定义主题Theme.AppCompat.Light.Dialog新建Activity,
+        在AndroidManifest配置theme属性,使它看起来就是自定义dialog,还有的是Activity如果继承AppCompatActivity则
+    默认有标题，继承Activity则没有</string>
+
+    <string name="activity_dialog">App/Activity/Dialog</string>
+    <string name="dialog_activity_add">添加内容</string>
+    <string name="dialog_activity_remove">移除内容</string>
+    <string name="theme_activity_dialog_text">你可以使用theme主题将一个activity改变成看起来像一个dialog,其中
+        的内容可以自适应显示在dialog里,此时的Activity如果继承的是AppCompatActivity则必须用以Theme.AppCompat为主
+        题的dialog，否则会报java.lang.IllegalStateException</string>
+
+    <string name="activity_finish_affinity">App/Activity/Finish Affinity</string>
+    <string name="next">下一个</string>
+    <string name="finish">FINISH</string>
+    <string name="finishiaffinity_activity_text">finishiAffinity()的使用场景是：关闭你当前activity所在栈中
+        的所有的activity。调用activity对象的finishiAffinity()方法，可以关闭当前activity所属的activity栈中所有
+        的activity。如果所有activity都保存在默认栈中，则使用该方法会直接退出程序。需要注意的一点是finishAffinity方
+        法在某些低版本的手机上并不能完全发挥其作用，仅相当于finish的功能，即只能finish掉当前的activity并不能清空当前
+        栈中的所有的activity\n 在AndroidManifest文件中的activity添加android:taskAffinity=\":finish\"//指定当前activity的所在栈  </string>
+
+    <string name="activity_intent_activity_flags">App/Activity/Intent Activity Flags</string>
+    <string name="flag_activity_clear_task">FLAG_ACTIVITY_CLEAR_TASK</string>
+    <string name="flag_activity_clear_task_pi">FLAG_ACTIVITY_CLEAR_TASK (PI)</string>
+
+    <string name="activity_intents">App/Activity/Intents</string>
+    <string name="intents">各种intents</string>
+    <string name="get_music">获取音乐</string>
+    <string name="get_image">获取图片</string>
+    <string name="get_stream">获取流</string>
+
+    <string name="activity_overscan">App/Activity/Overscan</string>
+
+    <string name="activity_persistent">App/Activity/Persistent State</string>
+    <string name="initial_text">初始文本</string>
+    <string name="saves_state">这里保存文本区域的内容状态：</string>
+    <string name="no_saves_state">这里不保存文本区域的内容状态：</string>
+    <string name="persistent_msg">通过getPreferences(0).edit()和getPreferences(0)来保存activity状态</string>
+
+    <string name="activity_presentation">App/Activity/Presentation</string>
+    <string name="presentation_text">Presentation是一种特殊的对话框，主要用于在另外一个屏幕上显示内容。值得注意的是在创建 presentation前必须把presentation与它的目标屏幕相关联。所以使用前必须为它选择一个Display。选择display 的方法主要有两种，一是用MediaRouter,二是用DisplayManager,这里用的是第二种。</string>
+    <string name="presentation_show_all_displays">显示所有displays</string>
+    <string name="presentation_info_text">info</string>
+    <string name="presentation_photo_text">Showing photo #%1$d on display #%2$d: %3$s.</string>
+    <string name="presentation_display_id_text">Display #%1$d: %2$s</string>
+    <string name="presentation_alert_info_text">Display #%1$d Info</string>
+    <string name="presentation_alert_dismiss_text">OK</string>
+
+    <string name="activity_presentation_with_media_router">App/Activity/Presentation with Media Router</string>
+    <string name="presentation_with_media_router_activity_text">这个Demo演示了presentation的另一种选择Display的方式：利用MediaRouterAPI。 媒体路由服务一直保持着对系统中可用的音频和视频路由的追踪。当媒体路由被选择或取消选择或者路由首选的presentation显示屏幕发生变化时，它都会发送通知消息。所以一个应用程序可以非常简单地观察这些通知消息来并自动地在首选的presentation显示屏幕上显示或撤消一个presentation。</string>
+    <string name="presentation_with_media_router_now_playing_locally">在本机屏幕： \'%s\' 中显示内容.</string>
+    <string name="presentation_with_media_router_now_playing_remotely">在屏幕： \'%s\' 中显示presentation的内容.</string>
+
+    <string name="quick_contacts_demo">App/Activity/QuickContactsDemo</string>
+    <string name="quick_contacts_text">点击头像可查看联系人信息</string>
+
+    <string name="activity_receive_result">App/Activity/Receive Result</string>
+    <string name="receive_result_instructions">点击按钮，获取得到activity result，然后显示在下面：</string>
+    <string name="get_result">获取结果</string>
+    <string name="pick_result">选择发送一个结果，或者直接取消返回</string>
+    <string name="corky">Corky</string>
+
+    <string name="activity_recreate">App/Activity/Recreate</string>
+    <string name="activity_recreate_msg">示范重新创建一个活动，主要改变的是主题</string>
+
+    <string name="activity_redirect">App/Activity/Redirection</string>
+    <string name="redirect_enter">按下按钮，下一个activity将有条件地重定向到另一个activity，从用户那里收集数据</string>
+    <string name="go">go</string>
+    <string name="redirect_main">你现在看到的main activity正常运行，因为用户文本设置为：</string>
+    <string name="clear_text">清除并离开</string>
+    <string name="new_text">新文本</string>
+    <string name="apply">应用</string>
+
+    <string name="activity_reorder">App/Activity/Reorder Activities</string>
+    <string name="reorder_on_launch">这是一个序列的四个activity，第四个activity则使用Intent.FLAG_ACTIVITY_REORDER_TO_FRONT标志将第二个activity的历史堆栈的前面，在这之后返回排序的activity顺序为：第四，第三，第一</string>
+    <string name="reorder_launch_two">运行第二个activity</string>
+
+    <string name="activity_rotation_animation">App/Activity/Rotation Animation</string>
+    <string name="rotation_animation_fullscreen">全屏</string>
+    <string name="rotation_animation_decription">选择全屏则不显示状态栏，选择全屏后再选择屏幕切换动画效果后可旋转查看</string>
+    <string name="rotation_animation_selection">旋转动画：旋转后</string>
+    <string name="rotate">有转动</string>
+    <string name="xfade">淡入淡出</string>
+    <string name="jumpcut">立即显示</string>
+
+    <string name="activity_screen_orientation">App/Activity/Screen Orientation</string>
+    <string name="screen_orientation_summary">设置activity的方向。通常你可以在清单中android:screenOrientation设置所需的模式</string>
+    <string name="screen_orientation">Screen Orientation</string>
+
+    <string name="activity_secure_window">App/Activity/Secure Surfaces</string>
+    <string name="secure_activity_text">这里的安全模式主要是不允许截屏；设置了这个属性的窗口，在窗口可见的情况下，是会禁用系统的截图功能的。</string>
+    <string name="secure_dialog">安全弹框</string>
+    <string name="secure_dialog_text">安全模式下的dialog</string>
+
+    <string name="activity_setwallpaper">App/Activity/SetWallpaper</string>
+    <string name="randomize">随机</string>
+    <string name="set_wallpaper">设置壁纸</string>
+
+    <string name="soft_input_modes">App/Activity/Soft Input Modes</string>
+    <string name="soft_input_modes_label">调整模式：</string>
+    <string name="soft_input_modes_content">这里是根据输入法的模式进行调整：
+        SOFT_INPUT_ADJUST_NOTHING:不调整(输入法完全直接覆盖住)
+        SOFT_INPUT_ADJUST_PAN:把整个Layout顶上去露出获得焦点的EditText,不压缩多余空间(整个窗口上移)
+        SOFT_INPUT_ADJUST_RESIZE:整个Layout重新编排,重新分配多余空间(挤压窗口)
+        SOFT_INPUT_ADJUST_UNSPECIFIED:系统自己根据内容自行选择上两种方式的一种执行(默认配置)
+    </string>
+    <string name="soft_input_modes_initial_text">这里是文本输入，点击可查看效果。这里根据输入法框的弹出进行不同的显示方式</string>
+    <string name="soft_input_modes_summary">这里展示了输入法的不同模式下对整个窗口的影响</string>
+
+    <string name="activity_translucent">App/Activity/Translucent</string>
+    <string name="translucent_background">通过清单设置theme将activity透明化</string>
+
+    <string name="activity_wallpaper">App/Activity/Wallpaper</string>
+    <string name="activity_wallpaper_text">背景透明并直接透过覆盖在上面的activity,直接显示在壁纸之上</string>
+
+    <string name="activity_alarm_controller">App/Alarm/Alarm Controller</string>
+    <string name="alarm_controller">这里展示如何使用Alarm</string>
+    <string name="one_shot_alarm">单次闹钟</string>
+    <string name="start_repeating_alarm">重复闹钟</string>
+    <string name="stop_repeating_alarm">停止重复闹钟</string>
+    <string name="one_shot_received">一次闹钟过了</string>
+    <string name="repeating_received">重复闹钟已响应</string>
+    <string name="one_shot_scheduled">10s后会有一次闹钟,你可以尝试改变时间</string>
+    <string name="repeating_unscheduled">停止重复闹铃</string>
+    <string name="repeating_scheduled">每隔10s都会重复闹铃</string>
+
+    <string name="activity_alarm_service">App/Alarm/Alarm Service</string>
+    <string name="alarm_service">这里通过开启service来长期存活监听alarm</string>
+    <string name="start_alarm_service">开启alarm service</string>
+    <string name="stop_alarm_service">关闭alarm service</string>
+    <string name="alarm_service_started">alarm service 开始运行</string>
+    <string name="alarm_service_label">alarm service测试</string>
+    <string name="alarm_service_finished">alarm service 结束</string>
+
+    <string name="activity_alert_dialog">App/Alert Dialogs</string>
+    <string name="simple_dialog">基本对话框</string>
+    <string name="simple_list_dialog">简单列表对话框</string>
+    <string name="single_choice_dialog">单选项列表对话框</string>
+    <string name="multi_choice_dialog">多选项列表对话框</string>
+    <string name="custom_theme_dialog">自定义主题对话框</string>
+    <string name="custom_adapter_dialog">自定义Adapter对话框</string>
+    <string name="custom_view_dialog">自定义View对话框</string>
+    <string name="dialog_message">这里是内容区域</string>
+    <string name="postive_button">确定</string>
+    <string name="negative_button">取消</string>
+
+    <string name="activity_sample_device_admin">App/Device Admin</string>
+    <string name="admin_receiver_status">设备管理: %1$s</string>
+    <string name="admin_receiver_status_enabled">启动</string>
+    <string name="admin_receiver_status_disable_warning">这个可选信息是警告用户关于禁用</string>
+    <string name="admin_receiver_status_disabled">关闭</string>
+    <string name="admin_receiver_status_pw_changed">密码改变</string>
+    <string name="admin_receiver_status_pw_failed">密码失败</string>
+    <string name="admin_receiver_status_pw_succeeded">密码成功</string>
+    <string name="expiration_status_past">密码已经过期 %1$s </string>
+    <string name="expiration_status_future">密码将会在 %1$s 后过期</string>
+    <string name="header_general">常规设置</string>
+    <string name="header_quality">锁屏密码</string>
+    <string name="header_expiration">过期密码</string>
+    <string name="header_lock_wipe">锁屏 / wipe</string>
+    <string name="header_encryption">加密</string>
+    <string name="password_sufficient">当前密码符合规范要求</string>
+    <string name="password_insufficient">当前密码不符合规范要求</string>
+    <string name="monkey_ok">我容许失败</string>
+    <string name="monkey_reset_password">你不能重新设置密码，因为你使用mokey</string>
+    <string name="reset_password_warning">
+        您刚刚重置您的屏幕密码锁为 \"%1$s\""</string>
+    <string name="reset_password_ok">请不要忘记</string>
+    <string name="status_local_global">Local=%1$s / Global=%2$s</string>
+
+    <string name="enable_admin">启动设备管理</string>
+    <string name="sample_device_admin">设备管理权限</string>
+    <string name="sample_device_admin2">虚拟设备管理</string>
+
+    <string name="device_capabilities_category">设备功能</string>
+    <string name="device_capabilities_disabled">已禁用</string>
+    <string name="device_capabilities_enabled">已启用</string>
+    <string name="disable_camera">设备所有摄像头</string>
+    <string name="disable_keyguard_widgets">锁屏组件</string>
+    <string name="disable_keyguard_secure_camera">锁屏安全摄像头</string>
+    <string name="disable_keyguard_notifications">锁屏通知</string>
+    <string name="disable_keyguard_unredacted_notifications">锁屏编辑通知</string>
+    <string name="disable_keyguard_trust_agents">锁屏信任代理</string>
+    <string name="disable_keyguard_fingerprint">锁屏指纹</string>
+    <string name="disable_keyguard_remote_input">锁屏远程输入</string>
+    <string name="trust_agent_category">信任代理功能</string>
+    <string name="set_trust_agent_component_name">启动组件名称</string>
+    <string name="set_trust_agent_feature_list">启动特性</string>
+    <string name="add_admin_extra_app_text">在这里可以添加自定义的说明性内容</string>
+
+    <string name="password_controls_category">密码管理</string>
+    <string name="set_password_user">设置密码 (user)</string>
+    <string name="set_password_api">设置密码 (via API)</string>
+    <string name="set_password_api_dialog">设置锁屏密码为</string>
+    <string name="password_quality_category">密码特性类别</string>
+    <string name="password_quality">密码特性</string>
+    <string name="password_minimum_length">最小长度 </string>
+    <string name="password_minimum_letters">最少字母数</string>
+    <string name="password_minimum_numeric">最少数字</string>
+    <string name="password_minimum_lower_case">最少小写数</string>
+    <string name="password_minimum_upper_case">最少大写数</string>
+    <string name="password_minimum_symbols">最少标点符号</string>
+    <string name="password_minimum_non_letter">最少非字母</string>
+    <string name="number_format_warning">不合适的值 \"%1$s\""</string>
+
+    <string name="password_expiration_category">密码 历史限制/到期</string>
+    <string name="password_history_depth">密码历史限制(防止用户重用过去的密码)</string>
+    <string name="password_expiration_timeout">密码过期时间 (分钟)</string>
+    <string name="password_expiration_status">密码过期状态</string>
+    <string name="expiration_status_none">无</string>
+    <string name="status_days_hours_minutes">%1$sd %2$sh %3$sm</string>
+
+    <string name="lock_wipe_category">锁屏 / wipe</string>
+    <string name="maximum_lock_time">最大间隔时间锁屏 (分钟)</string>
+    <string name="maximum_password_fails">Max password failures for local wipe</string>
+    <string name="lock_screen">立即锁屏</string>
+    <string name="wipe_data">清除数据</string>
+    <string name="wipe_data_summary">清空data分区并恢复出厂设置</string>
+    <string name="wipe_all_data">清除所有数据</string>
+    <string name="wipe_all_data_summary">清除内部数据和外部数据</string>
+
+    <string name="monkey_lock_screen">你无法锁屏，你使用了monkey!</string>
+    <string name="monkey_encryption">你无法加密，你使用了monkey!</string>
+    <string name="monkey_wipe_data">你无法清除数据，你使用了monkey!</string>
+    <string name="status_device_encryption">设备加密状态=%1$s</string>
+    <string name="wipe_warning_first">这将会清除你的数据，确定吗?</string>
+    <string name="wipe_warning_first_ok">Yes</string>
+    <string name="wipe_warning_first_no">No</string>
+    <string name="wipe_warning_second">这不是测试，它将会清除你所有数据，确定吗?</string>
+    <string name="wipe_warning_second_full">这不是测试，它将会清除你所有数据，包括外部sd卡，确定吗?</string>
+    <string name="wipe_warning_second_ok">BOOM!</string>
+    <string name="wipe_warning_second_no">Oops, run away!</string>
+
+    <string name="encryption_category">加密</string>
+    <string name="require_encryption">请求加密</string>
+    <string name="activate_encryption">激活加密</string>
+    <string name="encryption_not_supported">当前设备不支持加密.</string>
+    <string name="encryption_not_supported_ok">OK</string>
+    <string name="encryption_status_unknown">unknown</string>
+    <string name="encryption_status_unsupported">不支持</string>
+    <string name="encryption_status_inactive">闲置</string>
+    <string name="encryption_status_activating">激活中</string>
+    <string name="encryption_status_active">激活</string>
+
+    <string name="fragment_alert_dialog">App/Fragment/Alert Dialog</string>
+    <string name="fragment_alert_dialog_text">点击按钮，显示弹出框(dialogfragment)</string>
+    <string name="fragment_alert_dialog_title">这弹出框是由dialogfragment创建的！！</string>
+
+    <string name="fragment_arguments">App/Fragment/Arguments</string>
+    <string name="fragment_arguments_embedded">从属性添加</string>
+    <string name="fragment_arguments_add">从参数添加</string>
+    <string name="fragment_arguments_text">这里介绍将fragment添加到activity的两种方式：(1)在activity布局文件里声明fragment.(2)通过java代码将fragment添加到已存的ViewGroup中</string>
+
+    <string name="fragment_context_menu">App/Fragment/Context Menu</string>
+    <string name="fragment_context_menu_msg">上下文菜单ContextMenu由系统支持，常用于通过长按控件弹出列表形菜单，这里展示举例使用Fragment上下文件菜单</string>
+    <string name="long_press">长按</string>
+
+    <string name="fragment_dialog">App/Fragment/Dialog</string>
+    <string name="show">显示</string>
+    <string name="activity_fragment_dialog_text">通过DialogFragment显示dialog，点击show按钮查看第一个dialog，接下来点击按钮显示不同主题的dialog</string>
+
+    <string name="fragment_dialog_or_activity">App/Fragment/Dialog or Activity</string>
+    <string name="fragment_dialog_or_activity_msg">这里展示将dialogfragment嵌入activity或者弹出dialogfragment</string>
+    <string name="fragment_dialog_or_activity_inline">这里fragment嵌入activity：</string>
+    <string name="fragment_dialog_text">这是一个dialogfragment</string>
+
+    <string name="fragment_hide_show">App/Fragment/Hide and Show</string>
+    <string name="activity_fragment_hide_show">显示和隐藏fragment</string>
+    <string name="hide">隐藏</string>
+    <string name="activity_fragment_text">此文本可保存和恢复.</string>
+
+    <string name="fragment_layout">App/Fragment/Layout</string>
+
+    <string name="fragment_list_array">App/Fragment/List Array</string>
+
+    <string name="fragment_menu">App/Fragment/Menu</string>
+    <string name="fragment_menu_msg">通过fragment创建menus，可隐藏也可以移除</string>
+    <string name="fragment1menu">显示fragment1 menu</string>
+    <string name="fragment2menu">显示fragment2 menu</string>
+
+    <string name="fragment_nesting_tabs">App/Fragment/Nesting Tabs</string>
+
+    <string name="fragment_receive_result">App/Fragment/Receive Result</string>
+
+    <string name="fragment_retain_instance">App/Fragment/Retain Instance</string>
+    <string name="restart">重新开始</string>
+    <string name="fragment_retain_instance_msg">默认情况下，但配置发生变化时，Fragment会随着它们的宿主Activity
+        被创建和销毁。调用Fragment#setRetaininstance(true)允许我们跳过销毁和重新创建的周期。指示系统保留当前的fragment
+        实例，即使是在Activity被创新创建的时候。不难想到使用fragment持有像运行中的线程、AsyncTask、Socket等对象
+        将有效地解决上面的问题.\n\n下面视图则为RetainedFragment: \n</string>
+
+    <string name="fragment_stack">App/Fragment/Stack</string>
+    <string name="new_fragment">Push</string>
+    <string name="delete_fragment">Pop</string>
+
+    <string name="loader_cursor">App/Loader/Cursor</string>
+
+    <string name="loader_retained">App/Loader/Retained</string>
+
+    <string name="loader_custom">App/Loader/Custom</string>
+
+    <string name="loader_throttle">App/Loader/Throttle</string>
+
+    <string name="menu_from_xml_title">App/Menu/Inflate from XML</string>
+    <string name="menu_from_xml_instructions_press_menu">请点击选择菜单！</string>
+    <string name="menu_from_xml_instructions_go_back">这里可选择其他menu资源</string>
+
+</resources>

@@ -1,0 +1,526 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.loften.android.api">
+
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+    <uses-permission android:name="android.permission.WRITE_CONTACTS"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.SET_WALLPAPER"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.SEND_SMS"/>
+    <uses-permission android:name="android.permission.RECEIVE_SMS"/>
+    <uses-permission android:name="android.permission.RECEIVE_MMS"/>
+    <uses-permission android:name="android.permission.WRITE_SMS"/>
+    <uses-permission android:name="android.permission.READ_SMS"/>
+    <uses-permission android:name="android.permission.NFC"/>
+    <uses-permission android:name="android.permission.TRANSMIT_IR"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+
+    <application
+        android:name=".ApiDemosApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".app.ToolbarUsage"
+            android:label="@string/action_bar_usage">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.MY_SAMPLE_CODE"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".app.ToolbarActivity">
+        </activity>
+        <activity
+            android:name=".app.TestToolbarActivity"
+            android:label="@string/action_bar_transparent">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.MY_SAMPLE_CODE"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".app.ImgTranslucentActivity"
+            android:label="@string/activity_overscan"
+            android:theme="@style/ImageTranslucentTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.MY_SAMPLE_CODE"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".app.Animation"
+            android:label="@string/activity_animation">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.MY_SAMPLE_CODE"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".app.CustomDialogActivity"
+            android:label="@string/activity_custom_dialog"
+            android:theme="@style/Theme.AppCompat.Light.Dialog">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.MY_SAMPLE_CODE"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".app.DialogActivity"
+            android:label="@string/activity_dialog"
+            android:theme="@style/ThemeCurrentDialog">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.MY_SAMPLE_CODE"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".app.FinishAffinityActivity"
+            android:label="@string/activity_finish_affinity"
+            android:taskAffinity=":finishing">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.MY_SAMPLE_CODE"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".app.IntentActivityFlags"
+            android:label="@string/activity_intent_activity_flags">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.MY_SAMPLE_CODE"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".app.Intents"
+            android:label="@string/activity_intents">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.MY_SAMPLE_CODE"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".app.PersistentState"
+            android:label="@string/activity_persistent">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.MY_SAMPLE_CODE"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".app.PresentationActivity"
+            android:label="@string/activity_presentation">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.MY_SAMPLE_CODE"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".app.PresentationWithMediaRouterActivity"
+            android:label="@string/activity_presentation_with_media_router">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.MY_SAMPLE_CODE"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".app.QuickContactsDemo"
+            android:label="@string/quick_contacts_demo">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.MY_SAMPLE_CODE"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".app.ReceiveResult"
+            android:label="@string/activity_receive_result">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.MY_SAMPLE_CODE"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".app.SendResult">
+        </activity>
+        <activity
+            android:name=".app.RecreateActivity"
+            android:label="@string/activity_recreate">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.MY_SAMPLE_CODE"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".app.RedirectEnter"
+            android:label="@string/activity_redirect">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.MY_SAMPLE_CODE"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".app.RedirectMain">
+        </activity>
+        <activity android:name=".app.RedirectGetter">
+        </activity>
+        <activity
+            android:name=".app.ReorderOnLaunch"
+            android:label="@string/activity_reorder">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.MY_SAMPLE_CODE"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".app.ReorderTwo">
+        </activity>
+        <activity android:name=".app.ReorderThree">
+        </activity>
+        <activity android:name=".app.ReorderFour">
+        </activity>
+        <activity
+            android:name=".app.RotationAnimation"
+            android:label="@string/activity_rotation_animation">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.MY_SAMPLE_CODE"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".app.ScreenOrientation"
+            android:label="@string/activity_screen_orientation">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.MY_SAMPLE_CODE"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".app.SecureSurfacesActivity"
+            android:label="@string/activity_secure_window">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.MY_SAMPLE_CODE"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".app.SetWallpaperActivity"
+            android:label="@string/activity_setwallpaper">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.MY_SAMPLE_CODE"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".app.SoftInputModes"
+            android:label="@string/soft_input_modes">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.MY_SAMPLE_CODE"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".app.TranslucentActivity"
+            android:label="@string/activity_translucent"
+            android:theme="@style/Theme.Translucent">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.MY_SAMPLE_CODE"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".app.WallpaperActivity"
+            android:label="@string/activity_wallpaper"
+            android:theme="@style/Theme.Wallpaper">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.MY_SAMPLE_CODE"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".app.AlarmController"
+            android:label="@string/activity_alarm_controller">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.MY_SAMPLE_CODE"/>
+            </intent-filter>
+        </activity>
+
+        <receiver
+            android:name=".app.OneShotAlarm"
+            android:process=":remote">
+        </receiver>
+        <receiver
+            android:name=".app.RepeatingAlarm"
+            android:process=":remote">
+        </receiver>
+
+        <activity
+            android:name=".app.AlarmService"
+            android:label="@string/activity_alarm_service">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.MY_SAMPLE_CODE"/>
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name=".app.AlarmService_Service"
+            android:process=":remote">
+        </service>
+
+        <activity
+            android:name=".app.AlertDialogSamples"
+            android:label="@string/activity_alert_dialog">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.MY_SAMPLE_CODE"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".app.DeviceAdminSample"
+            android:label="@string/activity_sample_device_admin">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.MY_SAMPLE_CODE"/>
+            </intent-filter>
+        </activity>
+
+        <receiver
+            android:name=".app.DeviceAdminSample$DeviceAdminSampleReceiver"
+            android:label="@string/sample_device_admin"
+            android:permission="android.permission.BIND_DEVICE_ADMIN">
+            <meta-data
+                android:name="android.app.device_admin"
+                android:resource="@xml/device_admin_sample"/>
+
+            <intent-filter>
+                <action android:name="android.app.action.DEVICE_ADMIN_ENABLED"/>
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name=".app.DeviceAdminSample$DeviceAdminSampleReceiver2"
+            android:label="@string/sample_device_admin2"
+            android:permission="android.permission.BIND_DEVICE_ADMIN">
+            <meta-data
+                android:name="android.app.device_admin"
+                android:resource="@xml/device_admin_sample"/>
+
+            <intent-filter>
+                <action android:name="android.app.action.DEVICE_ADMIN_ENABLED"/>
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".app.FragmentAlertDialog"
+            android:label="@string/fragment_alert_dialog">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.MY_SAMPLE_CODE"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".app.FragmentArguments"
+            android:label="@string/fragment_arguments">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.MY_SAMPLE_CODE"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".app.FragmentContextMenu"
+            android:label="@string/fragment_context_menu">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.MY_SAMPLE_CODE"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".app.FragmentDialog"
+            android:label="@string/fragment_dialog">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.MY_SAMPLE_CODE"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".app.FragmentDialogOrActivity"
+            android:label="@string/fragment_dialog_or_activity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.MY_SAMPLE_CODE"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".app.FragmentHideShow"
+            android:label="@string/fragment_hide_show">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.MY_SAMPLE_CODE"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".app.FragmentLayout"
+            android:label="@string/fragment_layout">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.MY_SAMPLE_CODE"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".app.FragmentLayout$DetailsActivity"/>
+        <activity
+            android:name=".app.FragmentListArray"
+            android:label="@string/fragment_list_array">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.MY_SAMPLE_CODE"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".app.FragmentMenu"
+            android:label="@string/fragment_menu">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.MY_SAMPLE_CODE"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".app.FragmentNestingTabs"
+            android:label="@string/fragment_nesting_tabs">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.MY_SAMPLE_CODE"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".app.FragmentReceiveResult"
+            android:label="@string/fragment_receive_result">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.MY_SAMPLE_CODE"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".app.FragmentRetainInstance"
+            android:label="@string/fragment_retain_instance">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.MY_SAMPLE_CODE"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".app.FragmentStack"
+            android:label="@string/fragment_stack">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.MY_SAMPLE_CODE"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".app.LoaderCursor"
+            android:label="@string/loader_cursor"
+            android:theme="@style/Theme.AppCompat.Light">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.MY_SAMPLE_CODE"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".app.LoaderRetained"
+            android:label="@string/loader_retained"
+            android:theme="@style/Theme.AppCompat.Light">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.MY_SAMPLE_CODE"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".app.LoaderCustom"
+            android:label="@string/loader_custom"
+            android:theme="@style/Theme.AppCompat.Light">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.MY_SAMPLE_CODE"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".app.LoaderThrottle"
+            android:label="@string/loader_throttle"
+            android:theme="@style/Theme.AppCompat.Light">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.MY_SAMPLE_CODE"/>
+            </intent-filter>
+        </activity>
+
+        <provider
+            android:name=".app.LoaderThrottle$SimpleProvider"
+            android:authorities="com.loften.android.api.app.LoaderThrottle"/>
+
+        <activity
+            android:name=".app.MenuInflateFromXml"
+            android:label="@string/menu_from_xml_title"
+            android:theme="@style/Theme.AppCompat.Light">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.MY_SAMPLE_CODE"/>
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

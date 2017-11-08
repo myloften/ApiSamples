@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="8dp"
+    tools:context="com.loften.android.api.app.Animation">
+
+    <Button
+        android:id="@+id/fade_animation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/activity_animation_fade"/>
+
+    <Button
+        android:id="@+id/zoom_animation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/activity_animation_zoom"
+        app:layout_constraintTop_toBottomOf="@+id/fade_animation"/>
+
+    <Button
+        android:id="@+id/modern_fade_animation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/activity_modern_animation_fade"
+        app:layout_constraintTop_toBottomOf="@+id/zoom_animation"/>
+
+    <Button
+        android:id="@+id/modern_zoom_animation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/activity_modern_animation_zoom"
+        app:layout_constraintTop_toBottomOf="@+id/modern_fade_animation"/>
+
+    <Button
+        android:id="@+id/scale_up_animation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/activity_scale_up_animation"
+        app:layout_constraintTop_toBottomOf="@+id/modern_zoom_animation"/>
+
+    <Button
+        android:id="@+id/zoom_thumbnail_animation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/activity_zoom_thumbnail_animation"
+        app:layout_constraintTop_toBottomOf="@+id/scale_up_animation"/>
+
+    <Button
+        android:id="@+id/no_animation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/activity_no_animation"
+        app:layout_constraintTop_toBottomOf="@+id/zoom_thumbnail_animation"/>
+</android.support.constraint.ConstraintLayout>
