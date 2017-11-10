@@ -521,6 +521,52 @@
                 <category android:name="android.intent.category.MY_SAMPLE_CODE"/>
             </intent-filter>
         </activity>
+        <activity
+            android:name=".app.IncomingMessage"
+            android:label="@string/incoming_message">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.MY_SAMPLE_CODE"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".app.IncomingMessageView">
+        </activity>
+        <activity android:name=".app.IncomingMessageInterstitial">
+        </activity>
+        <activity
+            android:name=".app.NotifyingController"
+            android:label="@string/notifying_service_controller">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.MY_SAMPLE_CODE"/>
+            </intent-filter>
+        </activity>
+
+        <service android:name=".app.NotifyingService">
+        </service>
+
+        <activity
+            android:name=".app.NotifyWithText"
+            android:label="@string/notify_with_text">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.MY_SAMPLE_CODE"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".app.StatusBarNotifications"
+                  android:label="@string/status_bar"
+                  android:launchMode="singleTask">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.MY_SAMPLE_CODE"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".app.NotificationDisplay">
+        </activity>
     </application>
 
 </manifest>

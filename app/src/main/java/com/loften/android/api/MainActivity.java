@@ -19,14 +19,15 @@ import java.util.Map;
 
 public class MainActivity extends ListActivity {
 
-    private static String MY_CATEGORY_SAMPLE_CODE = "android.intent.category.MY_SAMPLE_CODE";
+    private static final String MY_CATEGORY_SAMPLE_CODE = "android.intent.category.MY_SAMPLE_CODE";
+    public static final String MY_APIS_PATH = "com.loften.android.apis.Path";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
         Intent intent = getIntent();
-        String path = intent.getStringExtra("com.loften.android.apis.Path");
+        String path = intent.getStringExtra(MY_APIS_PATH);
 
         if(path == null){
             path = "";
@@ -114,7 +115,7 @@ public class MainActivity extends ListActivity {
     protected Intent browseIntent(String path){
         Intent result = new Intent();
         result.setClass(this, MainActivity.class);
-        result.putExtra("com.loften.android.apis.Path", path);
+        result.putExtra(MY_APIS_PATH, path);
         return result;
     }
 

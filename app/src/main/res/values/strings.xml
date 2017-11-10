@@ -1,4 +1,4 @@
-<resources>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="app_name">ApiSamples</string>
 
     <string name="hello_world"><b>Hello, <i>World!</i></b></string>
@@ -330,5 +330,41 @@
     <string name="menu_from_xml_title">App/Menu/Inflate from XML</string>
     <string name="menu_from_xml_instructions_press_menu">请点击选择菜单！</string>
     <string name="menu_from_xml_instructions_go_back">这里可选择其他menu资源</string>
+
+    <string name="incoming_message">App/Notification/IncomingMessage</string>
+    <string name="incoming_message_text">显示通知,点击将切换到应用程序进入到一个新的activity栈</string>
+    <string name="interstitial_text">显示通知点击会跳到一个新的指定的页面,在该页面直接返回则退出程序，点击页面里按钮则进入程序中</string>
+    <string name="incoming_message_view_message_text">这是发布通知的文本.</string>
+    <string name="imcoming_message_view_message2_text">你注意到状态栏通知图标消失了吗?</string>
+    <string name="imcoming_message_ticker_text">新文本信息: <xliff:g id="text">%0$s</xliff:g></string>
+    <string name="notify_app_text">跳转到这里直接返回则返回到系统页面，点击下面按钮可进入到应用程序里页面</string>
+    <string name="notify_app_button">切换到应用程序</string>
+    <string name="notify_text">显示通知</string>
+
+    <string name="notifying_service_controller">App/Notification/Notifying Service Controller</string>
+    <string name="notifying_service_controller_text">该服务将会在一分钟内每5秒更新一个状态栏通知</string>
+    <string name="start_service">开启服务</string>
+    <string name="stop_service">停止服务</string>
+
+    <string name="notify_with_text">App/Notification/NotifyWithText</string>
+    <string name="notify_with_text_long_notify_text">显示长通知</string>
+    <string name="notify_with_text_short_notify_text">显示短通知</string>
+
+    <string name="status_bar">App/Notification/Status Bar</string>
+    <string name="status_bar_notifications_icons_only">图标</string>
+    <string name="status_bar_notifications_icons_and_marquee">图标和字幕</string>
+    <string name="status_bar_notifications_remote_views">可以自定义在Extended Status bar显示Notification的Layout，Extended Status Bar缺省显示Notification 是一个图标后接文字</string>
+    <string name="status_bar_notifications_defaults">在适合情况下使用默认值</string>
+    <string name="status_bar_notifications_happy">:-)</string>
+    <string name="status_bar_notifications_ok">:-|</string>
+    <string name="status_bar_notifications_sad">:-(</string>
+    <string name="status_bar_notifications_happy_message">I am happy</string>
+    <string name="status_bar_notifications_ok_message">I am ok</string>
+    <string name="status_bar_notifications_sad_message">I am sad</string>
+    <string name="status_bar_notifications_clear">清除通知</string>
+    <string name="status_bar_notifications_mood_title">Mood ring</string>
+    <string name="status_bar_notifications_default_sound">声音</string>
+    <string name="status_bar_notifications_default_vibrate">震动</string>
+    <string name="status_bar_notifications_default_all">所有</string>
 
 </resources>
