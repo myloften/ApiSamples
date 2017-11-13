@@ -367,4 +367,11 @@
     <string name="status_bar_notifications_default_vibrate">震动</string>
     <string name="status_bar_notifications_default_all">所有</string>
 
+    <string name="print_bitmap">App/Print/Print Bitmap</string>
+    <string name="android_logo">Android logo</string>
+    <string name="print_html_from_screen">App/Print/Print HTML from screen</string>
+    <string name="print_html_off_screen">App/Print/Print HTML off screen</string>
+    <string name="print_custom_content">App/Print/Print Custom Layout</string>
+    <string name="print">打印</string>
+    <string name="print_html_off_screen_msg">你也可以从菜单选项中选择打印内容</string>
 </resources>

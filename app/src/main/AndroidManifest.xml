@@ -556,9 +556,10 @@
                 <category android:name="android.intent.category.MY_SAMPLE_CODE"/>
             </intent-filter>
         </activity>
-        <activity android:name=".app.StatusBarNotifications"
-                  android:label="@string/status_bar"
-                  android:launchMode="singleTask">
+        <activity
+            android:name=".app.StatusBarNotifications"
+            android:label="@string/status_bar"
+            android:launchMode="singleTask">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 
@@ -566,6 +567,41 @@
             </intent-filter>
         </activity>
         <activity android:name=".app.NotificationDisplay">
+        </activity>
+        <activity
+            android:name=".app.PrintBitmap"
+            android:label="@string/print_bitmap">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.MY_SAMPLE_CODE"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".app.PrintCustomContent"
+            android:label="@string/print_custom_content">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.MY_SAMPLE_CODE"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".app.PrintHtmlFromScreen"
+            android:label="@string/print_html_from_screen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.MY_SAMPLE_CODE"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".app.PrintHtmlOffScreen"
+            android:label="@string/print_html_off_screen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.MY_SAMPLE_CODE"/>
+            </intent-filter>
         </activity>
     </application>
 
