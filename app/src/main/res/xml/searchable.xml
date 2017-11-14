@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--必选的参数是用于标识的 label 属性，可以简单的定义为和应用同名，
+其他参数都可选，不过一般建议使用hint参数定义搜索提示-->
+<searchable xmlns:android="http://schemas.android.com/apk/res/android"
+            android:hint="@string/search_hint"
+            android:label="@string/search_label"
+
+            android:searchSuggestAuthority="com.loften.android.api.SuggestionProvider"
+            android:searchSuggestSelection=" ? "
+            android:voiceLanguageModel="free_form"
+
+            android:voicePromptText="@string/search_invoke"
+            android:voiceSearchMode="showVoiceSearchButton|launchRecognizer"
+    />

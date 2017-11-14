@@ -374,4 +374,28 @@
     <string name="print_custom_content">App/Print/Print Custom Layout</string>
     <string name="print">打印</string>
     <string name="print_html_off_screen_msg">你也可以从菜单选项中选择打印内容</string>
+
+    <string name="search_invoke">App/Search/Invoke Search</string>
+    <string name="msg_search">Search (搜索）是Android平台的一个核心功能之一，用户可以在手机搜索在线的或是本地的信息。
+        Android平台为所有需要提供搜索或是查询功能的应用提供了一个统一的Search Framework来帮助实现Search功能。这里展示
+        了几种不同的方法来调用搜索，屏幕顶部的Search Dialog和可以嵌到ContentView中的SearchView，
+        应用可以将它放在屏幕上任何地方。</string>
+    <string name="search_sect_invocation">调用搜索方法</string>
+    <string name="label_onsearchrequested">搜索</string>
+    <string name="search_sect_options">可选搜索参数</string>
+    <string name="label_search_query_prefill">"预先填写查询: "</string>
+    <string name="label_search_query_appdata">"应用程序数据: "</string>
+
+    <string name="search_query_results">App/Search/Query Search Results</string>
+    <string name="msg_search_results">此页面为搜索结果页面，由于发生搜索时，系统的搜索框架会自动把搜索事件送入我们定义好的自定义搜索实现类中，
+因此我们还需要在onCreate里面获取系统发送给我们的事件。
+如果经过判断的确是搜索框架送来的事件，则取出搜索框架装配在事件上的搜索内容，
+然后显示在此页面</string>
+    <string name="label_search_query">"查询字符串: "</string>
+    <string name="label_search_appdata">"查询应用程序数据: "</string>
+    <string name="label_search_deliveredby">"Activity Method: "</string>
+
+    <string name="search_label">搜索</string>
+    <string name="search_hint">请输入搜索内容</string>
+
 </resources>

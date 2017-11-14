@@ -595,13 +595,64 @@
                 <category android:name="android.intent.category.MY_SAMPLE_CODE"/>
             </intent-filter>
         </activity>
-        <activity android:name=".app.PrintHtmlOffScreen"
+        <activity
+            android:name=".app.PrintHtmlOffScreen"
             android:label="@string/print_html_off_screen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 
                 <category android:name="android.intent.category.MY_SAMPLE_CODE"/>
             </intent-filter>
+        </activity>
+        <activity
+            android:name=".app.SearchInvoke"
+            android:label="@string/search_invoke">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.MY_SAMPLE_CODE"/>
+            </intent-filter>
+
+            <!-- This metadata entry causes .app.SearchQueryResults to be the default context -->
+            <!-- whenever the user invokes search while in this Activity. -->
+            <meta-data
+                android:name="android.app.default_searchable"
+                android:value=".app.SearchQueryResults"/>
+
+            <!-- This is not the typical way to define android.app.default_searchable, -->
+            <!-- and we show it here only because we wish to confine the search demo to this -->
+            <!-- section of the ApiDemos application. -->
+
+            <!-- For typical applications, it's simpler to define android.app.default_searchable -->
+            <!-- just once, at the application level, where it serves as a default for all of -->
+            <!-- the Activities in your package. -->
+        </activity>
+
+        <provider
+            android:name=".app.SearchSuggestionSampleProvider"
+            android:authorities="com.loften.android.api.SuggestionProvider"/>
+
+        <activity android:name=".app.SearchQueryResults"
+            android:label="@string/search_query_results">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.MY_SAMPLE_CODE"/>
+            </intent-filter>
+
+            <!-- This intent-filter identifies this activity as "searchable" -->
+
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+
+            <!-- This metadata entry provides further configuration details for searches -->
+            <!-- that are handled by this activity. -->
+
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchable"/>
         </activity>
     </application>
 
