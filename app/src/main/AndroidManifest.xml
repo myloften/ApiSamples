@@ -623,6 +623,7 @@
             <!-- and we show it here only because we wish to confine the search demo to this -->
             <!-- section of the ApiDemos application. -->
 
+
             <!-- For typical applications, it's simpler to define android.app.default_searchable -->
             <!-- just once, at the application level, where it serves as a default for all of -->
             <!-- the Activities in your package. -->
@@ -632,7 +633,8 @@
             android:name=".app.SearchSuggestionSampleProvider"
             android:authorities="com.loften.android.api.SuggestionProvider"/>
 
-        <activity android:name=".app.SearchQueryResults"
+        <activity
+            android:name=".app.SearchQueryResults"
             android:label="@string/search_query_results">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
@@ -644,6 +646,7 @@
 
             <intent-filter>
                 <action android:name="android.intent.action.SEARCH"/>
+
                 <category android:name="android.intent.category.DEFAULT"/>
             </intent-filter>
 
@@ -653,6 +656,14 @@
             <meta-data
                 android:name="android.app.searchable"
                 android:resource="@xml/searchable"/>
+        </activity>
+        <activity android:name=".app.TextToSpeechActivity"
+            android:label="@string/text_to_speech">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.MY_SAMPLE_CODE"/>
+            </intent-filter>
         </activity>
     </application>
 

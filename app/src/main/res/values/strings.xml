@@ -398,4 +398,8 @@
     <string name="search_label">搜索</string>
     <string name="search_hint">请输入搜索内容</string>
 
+    <string name="text_to_speech">App/Text-To-Speech</string>
+    <string name="again">再说一次</string>
+    <string name="text_to_speech_text">将文字快速转化为语音进行播放或者保存为音频文件</string>
+
 </resources>
