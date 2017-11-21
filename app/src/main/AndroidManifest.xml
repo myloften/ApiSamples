@@ -657,7 +657,8 @@
                 android:name="android.app.searchable"
                 android:resource="@xml/searchable"/>
         </activity>
-        <activity android:name=".app.TextToSpeechActivity"
+        <activity
+            android:name=".app.TextToSpeechActivity"
             android:label="@string/text_to_speech">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
@@ -665,6 +666,36 @@
                 <category android:name="android.intent.category.MY_SAMPLE_CODE"/>
             </intent-filter>
         </activity>
+        <activity
+            android:name=".app.ForegroundService$Controller"
+            android:label="@string/activity_foreground_service_controller">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.MY_SAMPLE_CODE"/>
+            </intent-filter>
+        </activity>
+
+        <service android:name=".app.ForegroundService"/>
+
+        <activity android:name=".app.IsolatedService$Controller"
+            android:label="@string/activity_isolated_service_controller">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.MY_SAMPLE_CODE"/>
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name=".app.IsolatedService"
+            android:enabled="true"
+            android:isolatedProcess="true"/>
+
+        <service
+            android:name=".app.IsolatedService2"
+            android:enabled="true"
+            android:isolatedProcess="true"/>
     </application>
 
 </manifest>

@@ -402,4 +402,22 @@
     <string name="again">再说一次</string>
     <string name="text_to_speech_text">将文字快速转化为语音进行播放或者保存为音频文件</string>
 
+    <string name="activity_foreground_service_controller">App/Service/Foreground Service Controller</string>
+    <string name="foreground_service_controller">下面是一个设置service前台运行的例子</string>
+    <string name="start_service_foreground">前台启动服务</string>
+    <string name="start_service_foreground_wakelock">前台启动服务/WakeLock锁</string>
+    <string name="start_service_background">后台启动服务</string>
+    <string name="start_service_background_wakelock">后台启动服务/WakeLock锁</string>
+    <string name="foreground_service_started">当前是前台服务</string>
+
+    <string name="activity_isolated_service_controller">App/Service/Isolated Service Controller</string>
+    <string name="isolated_service_controller">这演示了使用android:isolatedProcess与服务。有两个服务,可以独立控制;
+        他们将每次运行在自己的特殊进程。</string>
+    <string name="start_service_1">启动服务1</string>
+    <string name="stop_service_1">停止服务1</string>
+    <string name="bind_service_1">绑定服务1</string>
+    <string name="start_service_2">启动服务2</string>
+    <string name="stop_service_2">停止服务2</string>
+    <string name="bind_service_2">绑定服务2</string>
+
 </resources>
