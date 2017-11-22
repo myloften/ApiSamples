@@ -420,4 +420,18 @@
     <string name="stop_service_2">停止服务2</string>
     <string name="bind_service_2">绑定服务2</string>
 
+    <string name="activity_local_service_controller">App/Service/Local Service Controller</string>
+    <string name="local_service_controller">如果你在本例中启动Service之后，没有stopService ，这个Service将在后台一直运行，
+        即使你退出AppDemo或是启动其它应用。</string>
+    <string name="local_service_started">本地服务已经开始</string>
+    <string name="local_service_stopped">本地服务已经停止</string>
+
+    <string name="activity_local_service_binding">App/Service/Local Service Binding</string>
+    <string name="local_service_binding">绑定Service之后，即使你没有点击“unbind Service ”按钮，按“Back”键，
+        Binding Activity退出时，Android系统会自动断开与LocalService的绑定。屏幕上方Notification会自动消失。</string>
+    <string name="bind_service">绑定服务</string>
+    <string name="unbind_service">解绑服务</string>
+    <string name="local_service_connected">连接到本地服务</string>
+    <string name="local_service_disconnected">断开本地服务</string>
+
 </resources>

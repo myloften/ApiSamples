@@ -678,7 +678,8 @@
 
         <service android:name=".app.ForegroundService"/>
 
-        <activity android:name=".app.IsolatedService$Controller"
+        <activity
+            android:name=".app.IsolatedService$Controller"
             android:label="@string/activity_isolated_service_controller">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
@@ -691,11 +692,30 @@
             android:name=".app.IsolatedService"
             android:enabled="true"
             android:isolatedProcess="true"/>
-
         <service
             android:name=".app.IsolatedService2"
             android:enabled="true"
             android:isolatedProcess="true"/>
+
+        <activity android:name=".app.LocalServiceActivity$Controller"
+            android:label="@string/activity_local_service_controller">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.MY_SAMPLE_CODE"/>
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".app.LocalServiceActivity$Binding"
+            android:label="@string/activity_local_service_binding">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.MY_SAMPLE_CODE"/>
+            </intent-filter>
+        </activity>
+
+        <service android:name=".app.LocalService"/>
     </application>
 
 </manifest>
