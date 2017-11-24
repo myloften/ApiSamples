@@ -434,4 +434,35 @@
     <string name="local_service_connected">连接到本地服务</string>
     <string name="local_service_disconnected">断开本地服务</string>
 
+    <string name="activity_messenger_service_binding">App/Service/Messenger Service</string>
+    <string name="messenger_service_binding">如果希望支持不同应用或进程使用Service。可以通过Messenger。
+        使用Messgener可以用来支持进程间通信而无需使用AIDL。</string>
+    <string name="remote_service_started">远程服务已经开始</string>
+    <string name="remote_service_stopped">远程服务已经停止</string>
+    <string name="remote_service_label">远程服务例子</string>
+
+    <string name="activity_remote_service_controller">App/Service/Remote Service Controller</string>
+    <string name="remote_service_controller">这里主要演示如何在一个单独的进程中实现持久的服务，
+        并根据需要进行启动或停止。</string>
+
+    <string name="activity_remote_service_binding">App/Service/Remote Service Binding</string>
+    <string name="remote_service_binding">这演示了如何与一个持久的服务运行在另一个进程，并使用kill按钮来点击看看
+        会发生什么崩溃的过程。</string>
+    <string name="kill_process">Kill Process</string>
+    <string name="remote_service_connected">连接远程服务</string>
+    <string name="remote_service_disconnected">断开远程服务</string>
+    <string name="remote_service_unbind_disconn">解绑断开</string>
+    <string name="remote_call_failed">远程服务失败</string>
+
+    <string name="activity_remote_service_binding_options">App/Service/Remote Service Binding Options</string>
+    <string name="activity_service_start_arguments_controller">App/Service/Service Start Arguments Controller</string>
+    <string name="service_start_arguments_controller">这里主要介绍向service传递参数</string>
+    <string name="start1_service">Start \"One\" no redeliver</string>
+    <string name="start2_service">Start \"Two\" no redeliver</string>
+    <string name="start3_service">Start \"Three\" w/redeliver</string>
+    <string name="startfail_service">Start failed delivery</string>
+    <string name="service_created">Service created.</string>
+    <string name="service_destroyed">Service destroyed.</string>
+    <string name="service_start_arguments_label">Sample Service Start Arguments</string>
+
 </resources>

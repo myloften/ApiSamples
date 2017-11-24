@@ -697,7 +697,8 @@
             android:enabled="true"
             android:isolatedProcess="true"/>
 
-        <activity android:name=".app.LocalServiceActivity$Controller"
+        <activity
+            android:name=".app.LocalServiceActivity$Controller"
             android:label="@string/activity_local_service_controller">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
@@ -705,8 +706,8 @@
                 <category android:name="android.intent.category.MY_SAMPLE_CODE"/>
             </intent-filter>
         </activity>
-
-        <activity android:name=".app.LocalServiceActivity$Binding"
+        <activity
+            android:name=".app.LocalServiceActivity$Binding"
             android:label="@string/activity_local_service_binding">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
@@ -716,6 +717,61 @@
         </activity>
 
         <service android:name=".app.LocalService"/>
+        <service android:name=".app.RemoteService"/>
+
+        <activity
+            android:name=".app.MessengerServiceActivity$Binding"
+            android:label="@string/activity_messenger_service_binding">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.MY_SAMPLE_CODE"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".app.RemoteService$Controller"
+            android:label="@string/activity_remote_service_controller">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.MY_SAMPLE_CODE"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".app.RemoteService$Binding"
+            android:label="@string/activity_remote_service_binding">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.MY_SAMPLE_CODE"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".app.RemoteService$BindingOptions"
+            android:label="@string/activity_remote_service_binding_options">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.MY_SAMPLE_CODE"/>
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name=".app.MessengerService"
+            android:process=":remote"/>
+
+        <activity
+            android:name=".app.ServiceStartArguments$Controller"
+            android:label="@string/activity_service_start_arguments_controller"
+            android:launchMode="singleTop">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.MY_SAMPLE_CODE"/>
+            </intent-filter>
+        </activity>
+
+        <service android:name=".app.ServiceStartArguments"/>
     </application>
 
 </manifest>
