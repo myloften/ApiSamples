@@ -772,6 +772,7 @@
         </activity>
 
         <service android:name=".app.ServiceStartArguments"/>
+
     </application>
 
 </manifest>
